@@ -11,7 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/about-user" element={<AboutUser />} />
+        <Route path="/about-user/:id" element={<AboutUser />} />
+        <Route path="*" element={<h1>Page not found</h1>} />
       </Routes>
     </div>
   );
